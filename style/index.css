@@ -1,1 +1,213 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+box-sizing:border-box;
+max-width:100%;
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+html{
+ font-size: 62.5%;
+}
+body{
+ background-color: #ffebcd;
+}
+header{
+  margin: 1% 3% 0% 3%;
+  padding:0% 0% 5% 1%;
+  background-color:#6495ED;
+}
+/*nav styles*/
+header nav{
+ max-width:100%;
+}
+.container h1{
+  padding: 3% 1%;
+  font-size: 4rem;
+}
+#icons li {
+   display: inline-block;
+   justify-content: space-around;
+    list-style-type: none;
+    padding: 0% 1%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #icons a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color: #EEEEFF;
+    box-shadow: 5px 5px 5px gray;
+    margin-bottom: 1%;
+  }
+  #icons a:hover {
+    background-color: #DDDDEE;
+    box-shadow: 5px 5px 5px gray;
+    border: none;
+  }
+  /* first section*/
+  .first{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+  }
+  .intro{
+  padding-left: 2%;
+  width:70%;
+  }
+  .me{
+    padding-left: 4%;
+  }
+  
+  .me h2{
+    font-size: 3.2rem;
+    padding-bottom:1% ;
+  }
+  .me p{
+    margin-right: 4%;
+    padding-right: 4%;
+    font-size: 1.6rem;
+    display: inline-block;
+  }
+  /*my projects button*/
+  #contact li {
+    list-style-type: none;
+    width: 15%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+  }
+  #contact a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  background-color: #EEEEFF;
+  box-shadow: 5px 5px 5px gray;
+  margin-bottom: 2px;
+}
+ #contact a:hover {
+  background-color: #DDDDEE;
+  box-shadow: 3px 3px 3px gray;
+  border: none;
+}
+/* second section*/
+.projects{
+  display:flex;
+  flex-wrap:wrap;
+  align-items: baseline;
+  justify-content:space-around;
+}
+
+.projects div{ 
+  width:25%;
+  align-items: baseline;
+  padding: 2%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+  /*Footer*/
+footer{
+  background-color:#00CED1;
+  text-align: center;
+  padding: 5%;
+}
+footer h2{
+  font-size: 2.5rem;
+  padding-bottom: 2%;
+}
+
+#button li {
+  display: inline-block;
+  justify-content: center;
+  list-style-type: none;
+  width: 19%;
+  font-size:1.8rem;
+  text-align: center;
+}
+#button a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  background-color: #EEEEFF;
+  box-shadow: 5px 5px 5px gray;
+  margin-bottom: 1%;
+}
+#button a:hover {
+  background-color: #DDDDEE;
+  box-shadow: 3px 3px 3px gray;
+  border: none;
+}
+
+@media (max-width:800px){
+   
+#icons li {
+  padding: 0% 1%;
+}
+.intro{
+  padding-left: 2%;
+  width:166%;
+}
+.me h2{
+  font-size: 2.2rem;
+  padding-bottom:1% ;
+}
+.me p{
+  margin-right: 2%;
+  padding-right: 2%;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+#contact li {
+  padding: 1% 1%;
+  width: 26%;
+  font-size: 1.4rem;
+}
+}
+@media(max-width:500px){
+   
+header{
+  padding:0% 0% 3% 1%;
+}
+#icons li {
+  width: 12%;
+  font-size: 1.2rem;
+  padding: 0% 1%;
+}
+.intro{
+  padding-left: 2%;
+  width:170%;
+}
+.me h2{
+  font-size: 1.7rem;
+  padding-bottom:1% ;
+}
+.me p{
+  margin-right: 3%;
+  padding-right: 3%;
+  font-size: 1.2rem;
+  display: inline-block;
+}  
+#contact li {
+  padding: 1% 1%;
+  width: 30%;
+  font-size: 1.3rem;
+}
+footer{
+ padding-top: 2%;
+}
+}
